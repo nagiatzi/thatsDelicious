@@ -1,31 +1,16 @@
 import '../sass/style.scss';
- 
-import makeMap from './modules/map';
 
 import { $, $$ } from './modules/bling';
 import autocomplete from './modules/autocomplete';
 import typeAhead from './modules/typeAhead';
-
-/**
- *
- * 
- *  
-let addr = document.getElementById('address');
- let lat = document.getElementById('lat');
- let lng = document.getElementById('lng');
- let srch = document.getElementsByClassName('search');
- 
- 
- autocomplete(addr, lat, lng);
- typeAhead(srch);
-
-
- 
- */
-
+import makeMap from './modules/map';
+import ajaxHeart from './modules/heart';
 
 autocomplete( $('#address'), $('#lat'), $('#lng') );
 
 typeAhead( $('.search') );
 
-makeMap($('#map'));
+makeMap( $('#map') );
+
+const heartForms = $$('form.heart');
+heartForms.on('submit', ajaxHeart);
