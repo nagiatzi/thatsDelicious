@@ -58,12 +58,13 @@ router.post('/account/forgot', catchErrors(authController.forgot));
 
 //αυτά δεν τα παίρνω ακόμα αυτόματα σε επόμεν μάθημα στα mail
 router.get('/account/reset/:token', catchErrors(authController.reset));
+
 router.post('/account/reset/:token',
   authController.confirmedPasswords,
   catchErrors(authController.update)
 );
 
-
+router.get('/top', catchErrors(storeController.getTopStores));
 
 /*
 API
