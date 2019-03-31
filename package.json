@@ -1,6 +1,6 @@
 {
-  "name": "nagiatzi-thats-delicious",
-  "version": "1.0.0",
+  "name": "nodeApplication",
+  "version": "0.0.0",
   "private": true,
   "engines": {
     "node": ">= 7.6.0"
