@@ -1,6 +1,6 @@
 ## What is this?
 
-Just you wait folks!
+A Full Stack Application
 
 ## Sample Data
 
