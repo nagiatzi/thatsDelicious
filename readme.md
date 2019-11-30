@@ -1,13 +1,13 @@
 ## What is this?
 
-Just you wait folks!
+A Full-Stack Application that uses node.js
 
 ## Sample Data
 
 To load sample data, run the following command in your terminal:
 
 ```bash
-npm run sample
+npm run samplet 
 ```
 
 If you have previously loaded in this data, you can wipe your database 100% clean with:
